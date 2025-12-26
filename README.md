@@ -73,10 +73,7 @@ var array = require( '@stdlib/ndarray-array' );
 var x = array( [ 1.0, 2.0, 3.0 ] );
 
 var y = maxsorted( x );
-// returns <ndarray>
-
-var v = y.get();
-// returns 3.0
+// returns <ndarray>[ 3.0 ]
 ```
 
 The function has the following parameters:
@@ -93,81 +90,58 @@ The function accepts the following options:
 By default, the function performs a reduction over all elements in a provided input [ndarray][@stdlib/ndarray/ctor]. To perform a reduction over specific dimensions, provide a `dims` option.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 var array = require( '@stdlib/ndarray-array' );
 
 var x = array( [ 1.0, 2.0, 3.0, 4.0 ], {
     'shape': [ 2, 2 ],
     'order': 'row-major'
 });
-var v = ndarray2array( x );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 
 var y = maxsorted( x, {
     'dims': [ 0 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ 3.0, 4.0 ]
+// returns <ndarray>[ 3.0, 4.0 ]
 
 y = maxsorted( x, {
     'dims': [ 1 ]
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ 2.0, 4.0 ]
+// returns <ndarray>[ 2.0, 4.0 ]
 
 y = maxsorted( x, {
     'dims': [ 0, 1 ]
 });
-// returns <ndarray>
-
-v = y.get();
-// returns 4.0
+// returns <ndarray>[ 4.0 ]
 ```
 
 By default, the function excludes reduced dimensions from the output [ndarray][@stdlib/ndarray/ctor]. To include the reduced dimensions as singleton dimensions, set the `keepdims` option to `true`.
 
 ```javascript
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 var array = require( '@stdlib/ndarray-array' );
 
 var x = array( [ 1.0, 2.0, 3.0, 4.0 ], {
     'shape': [ 2, 2 ],
     'order': 'row-major'
 });
-
-var v = ndarray2array( x );
-// returns [ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
+// returns <ndarray>[ [ 1.0, 2.0 ], [ 3.0, 4.0 ] ]
 
 var y = maxsorted( x, {
     'dims': [ 0 ],
     'keepdims': true
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ 3.0, 4.0 ] ]
+// returns <ndarray>[ [ 3.0, 4.0 ] ]
 
 y = maxsorted( x, {
     'dims': [ 1 ],
     'keepdims': true
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ 2.0 ], [ 4.0 ] ]
+// returns <ndarray>[ [ 2.0 ], [ 4.0 ] ]
 
 y = maxsorted( x, {
     'dims': [ 0, 1 ],
     'keepdims': true
 });
-// returns <ndarray>
-
-v = ndarray2array( y );
-// returns [ [ 4.0 ] ]
+// returns <ndarray>[ [ 4.0 ] ]
 ```
 
 By default, the function returns an [ndarray][@stdlib/ndarray/ctor] having a [data type][@stdlib/ndarray/dtypes] determined by the function's output data type [policy][@stdlib/ndarray/output-dtype-policies]. To override the default behavior, set the `dtype` option.
@@ -201,10 +175,7 @@ var x = array( [ 1.0, 2.0, 3.0 ] );
 var y = zeros( [] );
 
 var out = maxsorted.assign( x, y );
-// returns <ndarray>
-
-var v = out.get();
-// returns 3.0
+// returns <ndarray>[ 3.0 ]
 
 var bool = ( out === y );
 // returns true
@@ -328,8 +299,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
