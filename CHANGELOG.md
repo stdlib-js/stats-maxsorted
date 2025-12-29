@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`4b1efc6`](https://github.com/stdlib-js/stdlib/commit/4b1efc6552af03e1b7d260f6f10e7e042e7d68f6) - **docs:** update dtype type _(by Athan Reines)_
 -   [`ff435c0`](https://github.com/stdlib-js/stdlib/commit/ff435c01d291e9ef75429a026fb221b729aa4a07) - **docs:** update dtype type _(by Athan Reines)_
 -   [`7f51132`](https://github.com/stdlib-js/stdlib/commit/7f511325dacfffc581b49bd6d3d4c5a035c167d8) - **docs:** improve doctests for ndarray instances in `stats/maxsorted` [(#9385)](https://github.com/stdlib-js/stdlib/pull/9385) _(by Shivam Mittal, Athan Reines)_
 -   [`9856e30`](https://github.com/stdlib-js/stdlib/commit/9856e30024f7a0bf0698f5274cc1d13b428b3891) - **docs:** fix description _(by Philipp Burckhardt)_
