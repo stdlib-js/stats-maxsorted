@@ -42,7 +42,8 @@
     "@stdlib/stats-base-ndarray-dmaxsorted": "github:stdlib-js/stats-base-ndarray-dmaxsorted#main",
     "@stdlib/stats-base-ndarray-maxsorted": "github:stdlib-js/stats-base-ndarray-maxsorted#main",
     "@stdlib/stats-base-ndarray-smaxsorted": "github:stdlib-js/stats-base-ndarray-smaxsorted#main",
-    "@stdlib/types": "^0.4.3"
+    "@stdlib/types": "^0.4.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-linspace": "^0.2.1",
