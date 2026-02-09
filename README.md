@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import maxsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-maxsorted@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-maxsorted/tags). For example,
+
+```javascript
 import maxsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-maxsorted@v0.1.1-esm/index.mjs';
 ```
 
@@ -203,7 +208,7 @@ The method accepts the following options:
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-linspace@esm/index.mjs';
 import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import maxsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-maxsorted@v0.1.1-esm/index.mjs';
+import maxsorted from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-maxsorted@esm/index.mjs';
 
 // Generate a sorted ndarray:
 var x = linspace( [ 5, 5 ], -10.0, 10.0 );
